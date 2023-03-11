@@ -64,7 +64,7 @@ ROOT_URLCONF = 'lumify_backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'lumify/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'lumify-frontend/build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'lumify/build/static'),
+    os.path.join(BASE_DIR, 'lumify-frontend/build/static'),
 ]
 
 # Default primary key field type
