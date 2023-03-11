@@ -1,0 +1,106 @@
+:root {
+  --page-background: rgb(240, 245, 247);
+  --page-color: black;
+  --search-form: #fff;
+  --snippet-color: white;
+  --link-color: #1841D2;
+  --input-color: white;
+  --border-color: none;
+  --border-color-2: #D8DFE8;
+  --gray-60: #8C90A1;
+  --code-bg: #F8FAFD;
+  --item-hover-grey: #8C90A1;
+
+
+}
+
+#theme-toggler {
+  position: fixed;
+  top: 90vh;
+  right: 5vw;
+  font-size: 48px;
+  text-align: right;
+  cursor: pointer;
+  color: var(--page-color);
+}
+
+.dark-theme {
+  /* background-color: rgb(14 14 14) !important;
+  color: white !important;
+  transition: 0.3s ease-in-out; */
+  --page-background: #15161b !important;
+  --page-color: white;
+  --search-form: #242731 !important;
+  --snippet-color: #242731 !important;
+  --link-color: #597cf9 !important;
+  --input-color: #17161E !important;
+  --border-color: 2px solid #737373;
+  --border-color-2: #333;
+  --gray-60: #8C90A1;
+  --code-bg: #2F313C;
+  --item-hover-grey: #767676;
+}
+
+/* autocomlete */
+/* autocomplete */
+.autocomplete-items {
+  position: absolute;
+  border: var(--border-color);
+  z-index: 99;
+  top: 116%;
+  left: -3px;
+  right: 0;
+  box-shadow: -1px 2px 8px rgb(30 30 30 / 25%);
+  text-align: left;
+  border-radius: 8px;
+  width: 101%;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--input-color);
+  border-bottom: 1px solid transparent;
+  border-radius: 8px;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: var(--snippet-color);
+  color: var(--page-color);
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: #676768 !important;
+  color: var(--page-color);
+}
+
+
+.search__suggestions {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.search__suggestions__list {
+  padding-right: 1rem;
+  line-height: 1.5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search__suggestions__list__result {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 8px;
+
+}
+
+.search__suggestions__list__result:hover {
+  background: var(--item-hover-grey);
+
+  cursor: default;
+}
