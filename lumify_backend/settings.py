@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'corsheaders',
     'rest_framework',
 ]
 
@@ -55,9 +54,6 @@ MIDDLEWARE = [
     
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-]
 
 ROOT_URLCONF = 'lumify_backend.urls'
 

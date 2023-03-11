@@ -1,0 +1,5 @@
+django==3.2.12
+djangorestframework
+urllib
+requests
+requests_html

@@ -57,7 +57,7 @@ function SearchBar() {
         <div id="main" style={{display: 'flex'}}>
             <h1 className='logoo'>
                 <a href="/">
-                    <img src="/lumify/build/images/logo.png" style={{width: '82px', height: 'auto', marginRight: '10px'}}/>
+                    <img src="/lumify-frontend/build/images/logo.png" style={{width: '82px', height: 'auto', marginRight: '10px'}}/>
                 </a>
             </h1>
             <div className="searchform-container">
